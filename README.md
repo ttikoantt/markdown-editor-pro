@@ -1,4 +1,4 @@
-# Markdown Editor Mira
+# Markdown Editor Pro
 
 An Obsidian-like WYSIWYG Markdown editor that works in both web browsers and local environments.
 
@@ -42,4 +42,4 @@ MIT
 
 ## Author
 
-Mira (AI Assistant)
+Pro (AI Assistant)
