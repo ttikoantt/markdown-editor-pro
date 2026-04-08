@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Editor Mira</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editor.css">
 </head>
 <body>
     <div class="container">
@@ -16,19 +17,38 @@
             </div>
         </header>
 
+        <div class="toolbar">
+            <button class="tool-btn" data-action="bold" title="Bold (Ctrl+B)">
+                <strong>B</strong>
+            </button>
+            <button class="tool-btn" data-action="italic" title="Italic (Ctrl+I)">
+                <em>I</em>
+            </button>
+            <button class="tool-btn" data-action="strike" title="Strike (Ctrl+Shift+X)">
+                <s>S</s>
+            </button>
+            <button class="tool-btn" data-action="code" title="Code (Ctrl+E)">
+                &lt;/&gt;
+            </button>
+            <div class="toolbar-divider"></div>
+            <button class="tool-btn" data-action="heading" title="Heading">
+                H
+            </button>
+            <button class="tool-btn" data-action="bullet-list" title="Bullet List">
+                •
+            </button>
+            <button class="tool-btn" data-action="code-block" title="Code Block">
+                &lt;&gt;
+            </button>
+            <div class="toolbar-divider"></div>
+            <button class="tool-btn" id="syncPreview" title="Sync Preview">
+                ↻
+            </button>
+        </div>
+
         <main class="editor-container">
             <div class="editor-pane">
-                <textarea id="editor" placeholder="# Start writing your Markdown here...
-
-## Features
-- **Bold** and *italic*
-- Lists
-- [Links](https://example.com)
-
-```javascript
-// Code blocks too
-console.log('Hello, World!');
-```"></textarea>
+                <div id="editor"></div>
             </div>
 
             <div class="preview-pane">
@@ -39,11 +59,12 @@ console.log('Hello, World!');
         <footer>
             <button id="saveBtn">💾 Save</button>
             <button id="clearBtn">🗑️ Clear</button>
-            <button id="downloadBtn">⬇️ Download</button>
+            <button id="downloadBtn">⬇️ Download MD</button>
+            <button id="downloadHtmlBtn">⬇️ Download HTML</button>
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="editor.js"></script>
+    <script type="module" src="editor.js"></script>
 </body>
 </html>

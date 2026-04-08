@@ -1,0 +1,140 @@
+.toolbar {
+    background: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.tool-btn {
+    background: white;
+    border: 1px solid #d0d0d0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 36px;
+}
+
+.tool-btn:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.tool-btn.is-active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.toolbar-divider {
+    width: 1px;
+    background: #d0d0d0;
+    margin: 0 5px;
+}
+
+/* TipTap Editor Styles */
+.ProseMirror {
+    outline: none;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.ProseMirror p {
+    margin-bottom: 1em;
+}
+
+.ProseMirror h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.3em;
+}
+
+.ProseMirror h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+}
+
+.ProseMirror h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.ProseMirror li {
+    margin-bottom: 0.5em;
+}
+
+.ProseMirror code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+}
+
+.ProseMirror pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+.ProseMirror pre code {
+    background: transparent;
+    padding: 0;
+}
+
+.ProseMirror blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #666;
+    font-style: italic;
+}
+
+.ProseMirror a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.ProseMirror a:hover {
+    text-decoration: underline;
+}
+
+.ProseMirror img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #adb5bd;
+    pointer-events: none;
+    height: 0;
+}
