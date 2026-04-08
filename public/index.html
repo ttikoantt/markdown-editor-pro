@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor Mira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Markdown Editor Mira</h1>
+            <div class="status">
+                <span id="saveStatus">✅ Saved</span>
+                <span id="wordCount">0 words</span>
+            </div>
+        </header>
+
+        <main class="editor-container">
+            <div class="editor-pane">
+                <textarea id="editor" placeholder="# Start writing your Markdown here...
+
+## Features
+- **Bold** and *italic*
+- Lists
+- [Links](https://example.com)
+
+```javascript
+// Code blocks too
+console.log('Hello, World!');
+```"></textarea>
+            </div>
+
+            <div class="preview-pane">
+                <div id="preview"></div>
+            </div>
+        </main>
+
+        <footer>
+            <button id="saveBtn">💾 Save</button>
+            <button id="clearBtn">🗑️ Clear</button>
+            <button id="downloadBtn">⬇️ Download</button>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="editor.js"></script>
+</body>
+</html>

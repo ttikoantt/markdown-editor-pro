@@ -1,0 +1,21 @@
+{
+  "name": "markdown-editor-mira",
+  "version": "0.0.1",
+  "description": "An Obsidian-like WYSIWYG Markdown editor",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "npx http-server public -p 8080",
+    "build": "echo 'Build complete'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["markdown", "editor", "wysiwyg", "obsidian"],
+  "author": "Mira",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "vercel": "^32.7.2"
+  }
+}
