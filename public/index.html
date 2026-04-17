@@ -17,6 +17,19 @@
             </div>
         </header>
 
+        <div class="file-toolbar">
+            <button id="newFileBtn" class="tool-btn" title="New File (Ctrl+N)">
+                📄 New
+            </button>
+            <button id="openFileBtn" class="tool-btn" title="Open File (Ctrl+O)">
+                📂 Open
+            </button>
+            <button id="saveFileBtn" class="tool-btn" title="Save File (Ctrl+S)">
+                💾 Save
+            </button>
+            <span id="fileName" class="filename">Untitled.md</span>
+        </div>
+
         <div class="toolbar">
             <button class="tool-btn" data-action="bold" title="Bold (Ctrl+B)">
                 <strong>B</strong>
@@ -65,6 +78,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="file-manager.js"></script>
     <script type="module" src="editor.js"></script>
 </body>
 </html>
